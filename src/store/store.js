@@ -8,28 +8,28 @@ let initialProducts = {
     products:[
     {
         id:v4(),
-        owner: 'ali@gmail',
+        owner: 'ID>abs@gmail-14354f4-4575-4ef0',
         title:"Hoodie",
         img:"https://static-01.daraz.pk/p/f46450927140f42aa46f47a35a1b254c.png_300x0q75.webp",
         price:2500
     },
     {
         id:v4(),
-        owner: 'ali@gmail',
+        owner: 'ID>abs@gmail-14354f4-4575-4ef0',
         title:"Zipper",
         img:"https://static-01.daraz.pk/p/7aaaefa6f26cd6ec95d1e076ef2a48ff.jpg_300x0q75.webp",
         price:1250
     },
     {
         id:v4(),
-        owner: 'ali@gmail',
+        owner: 'ID>abs@gmail-14354f4-4575-4ef0',
         title:"Pant",
         img:"https://static-01.daraz.pk/p/8edd441f3566c98f0a527ce2cd396e4d.jpg_300x0q75.webp",
         price:640
     },
     {
         id:v4(),
-        owner: 'ali@gmail',
+        owner: 'ID>abs@gmail-14354f4-4575-4ef0',
         title:"Zipper Hoodies",
         img:"https://static-01.daraz.pk/p/11fbc59331f01f27d41e7f695d7abd1a.png_300x0q75.webp",
         price:4599
@@ -67,9 +67,9 @@ function ProductSection(olData = initialProducts, newData){
 let initialAuthData = {
     users:[
         {
-            name:'ali@gmail.com',
-            password:'123',
-            id: 'ali@gmail' 
+            name:'abs@gmail.com',
+            password:'abs@gmail',
+            id: 'ID>abs@gmail-14354f4-4575-4ef0', 
             // it will create random id 
             // necause of this id cannot be matched in dashbord 
             // id shoud be same

@@ -13,12 +13,12 @@ export const Header = () => {
     <nav>
       <div className="nav-wrapper">
         
-        <Link to='/' className="brand-logo">
-          LOGO
+        <Link to='/' className="brand-logo" style={{marginLeft:'20px'}}>
+          ABS
         </Link>
         
         {loggedUser ? 
-          <span className='logo-name' style={{marginLeft:'100px'}}>
+          <span className='logo-name hide-on-med-and-down' style={{marginLeft:'100px'}}>
             Welcome, <strong><b>{loggedUser.name} </b></strong> 
           </span> 
         : null}
@@ -26,21 +26,22 @@ export const Header = () => {
         <ul id="nav-mobile" className="right hide-on-med-and-down">
         
           <li>
-            <input type='search' id='search'  style={{width:'min-content'}} />
-            <label 
-              htmlFor='search'
-              style={{cursor:'pointer'}}
-              onClick={(evt) => {
-                sendData({
-                  type: "SEARCH_PRODUCT",
-                  payload: document.getElementById('search').value
-                  // payload: evt.target.value
-                })
-              }} 
-            >
-              <button type='submit'>Search</button>
-            </label>
-
+            <form onSubmit={(eve)=>eve.preventDefault()}>
+              <input type='search' id='search'  style={{width:'min-content'}} />
+              <label 
+                htmlFor='search'
+                style={{cursor:'pointer'}}
+                onClick={(evt) => {
+                  sendData({
+                    type: "SEARCH_PRODUCT",
+                    payload: document.getElementById('search').value
+                    // payload: evt.target.value
+                  })
+                }} 
+              >
+                <button type='submit'>Search</button>
+              </label>
+            </form>
           </li>
 
           <li>

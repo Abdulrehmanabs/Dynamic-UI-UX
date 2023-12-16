@@ -21,17 +21,9 @@ export const WishList = () => {
                                     id: product.id
                                 })
                             }}
-                        >Remove</button>
-                        <button
-                            onClick={(eve) => {
-                                eve.preventDefault();
-
-                                dispatch({
-                                    type: "TOGGLE_LIKED_BTN",
-                                    id: product.id
-                                })
-                            }}
-                        >Remove & Add</button>
+                        >
+                            Remove From WishList
+                        </button>
                     </Card>
                 })
             }

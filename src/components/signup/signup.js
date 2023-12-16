@@ -1,11 +1,15 @@
 
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
+
 import { v4 } from 'uuid';
+import M from 'materialize-css';
+import { useNavigate } from 'react-router-dom';
 
 export const Signup = () => {
 
   let dispatch = useDispatch();
+  let move = useNavigate()
   let { register, handleSubmit } = useForm();
 
   const saveUser = (data) => {
@@ -16,6 +20,9 @@ export const Signup = () => {
       payload: data
     })
     console.log(data);
+    move('/')
+    M.Modal.init(document.getElementById('modal1'), {}).open()
+
   }
 
   return (
